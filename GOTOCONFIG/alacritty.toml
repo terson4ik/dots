@@ -1,0 +1,29 @@
+[general]
+working_directory = "/home/terson/Project/arka"
+
+[window]
+decorations = "Full"
+#startup_mode = "Maximized"
+dimensions = { columns = 80, lines = 25 }
+title = "terminal"
+#opacity = 0.8
+blur = false
+
+[font]
+size = 21
+
+[keyboard]
+bindings = [
+{key = "F11", action = "ToggleFullscreen"}
+]
+
+[terminal]
+#shell = { program = "/bin/zsh", args = ["-l"] }
+shell = { program = "/bin/bash", args = ["-l"] }
+#shell = { program = "/bin/fish", args = ["-l"] }
+
+[cursor]
+style = { shape = "Block", blinking = 'On' }
+
+[selection]
+save_to_clipboard = true
