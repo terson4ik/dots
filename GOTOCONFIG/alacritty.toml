@@ -10,7 +10,9 @@ title = "terminal"
 blur = false
 
 [font]
-size = 21
+normal = { family = "terminus", style = "Regular" }
+size = 32
+
 
 [keyboard]
 bindings = [
@@ -18,8 +20,8 @@ bindings = [
 ]
 
 [terminal]
-#shell = { program = "/bin/zsh", args = ["-l"] }
-shell = { program = "/bin/bash", args = ["-l"] }
+shell = { program = "/bin/zsh", args = ["-l"] }
+#shell = { program = "/bin/bash", args = ["-l"] }
 #shell = { program = "/bin/fish", args = ["-l"] }
 
 [cursor]
