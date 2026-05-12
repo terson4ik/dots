@@ -10,9 +10,12 @@ title = "terminal"
 blur = false
 
 [font]
-normal = { family = "terminus", style = "Regular" }
-size = 32
+#normal = { family = "terminus", style = "Regular" }
+normal = { family = "monospace", style = "Regular" }
+size = 16
 
+[scrolling]
+history = 100000
 
 [keyboard]
 bindings = [
@@ -25,7 +28,37 @@ shell = { program = "/bin/zsh", args = ["-l"] }
 #shell = { program = "/bin/fish", args = ["-l"] }
 
 [cursor]
-style = { shape = "Block", blinking = 'On' }
+style = { shape = "Block", blinking = "On" }
+blink_interval = 500
+
+# --- Цветовая схема DOS ---
+[colors.primary]
+background = "#000000" # Глубокий черный
+foreground = "#AAAAAA" # Классический серый текст
+
+[colors.cursor]
+text = "#000000"
+cursor = "#AAAAAA"
+
+[colors.normal]
+black   = "#000000"
+red     = "#AA0000"
+green   = "#00AA00"
+yellow  = "#AA5500" # Коричневатый оттенок
+blue    = "#0000AA"
+magenta = "#AA00AA"
+cyan    = "#00AAAA"
+white   = "#AAAAAA"
+
+[colors.bright]
+black   = "#555555" # Темно-серый
+red     = "#FF5555"
+green   = "#55FF55"
+yellow  = "#FFFF55"
+blue    = "#5555FF"
+magenta = "#FF55FF"
+cyan    = "#55FFFF"
+white   = "#FFFFFF" # Ярко-белый
 
 [selection]
 save_to_clipboard = true
