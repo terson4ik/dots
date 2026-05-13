@@ -3,6 +3,7 @@ mkdir -p /home/$USER/.config/
 mkdir -p /home/$USER/.local/bin 
 mv GOTOCONFIG/* /home/$USER/.config/ 
 rm -rf .git 
+rm -rf README.md
 rm -rf GOTOCONFIG 
 read -n 1 -p "type 'y' if you have a notebook, or 'n' if this wrong" answer
 echo ''
