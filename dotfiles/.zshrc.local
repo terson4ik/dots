@@ -1,3 +1,4 @@
+HISTFILE=~/d/.zsh_history
 alias HELP_ME='less ~/.zshrc.local'
 alias cls=clear
 alias pac-upd='sudo pacman -Syu'
