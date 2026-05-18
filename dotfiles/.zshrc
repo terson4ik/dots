@@ -29,6 +29,7 @@ if [ -r ~/.zshrc -a -r ~/.zshrc.global -a ! -r ~/.zshrc.local ] ; then
     printf '-!-        touch ~/.zshrc.local\n'
     printf '-!-\n'
 fi
+
 ## Settings for umask
 #if (( EUID == 0 )); then
 #    umask 002
@@ -166,10 +167,6 @@ fi
 #zstyle ':completion:*' special-dirs true
 
 ## aliases ##
-alias cls='clear'
-alias rg='ranger'
-alias v='vim'
-alias q='rm -v .*~; rm -v *~; rm -v *.o;'
 
 ## translate
 #alias u='translate -i'
@@ -299,7 +296,7 @@ alias q='rm -v .*~; rm -v *~; rm -v *.o;'
 #    emulate -L zsh
 #    if [[ -n "$1" ]]; then
 #        printf "%x\n" $1
-#    else
+#    else[<0;50;12M
 #        print 'Usage: hex <number-to-convert>'
 #        return 1
 #    fi
@@ -342,3 +339,4 @@ alias q='rm -v .*~; rm -v *~; rm -v *.o;'
 #vimhelp ()    { vim -c "help $1" -c on -c "au! VimEnter *" }
 
 ## END OF FILE #################################################################
+HISTFILE=~/d/.zsh_history
