@@ -1,15 +1,19 @@
-"set spell
+colorscheme pablo
+"colorscheme default         " it`s change default colors terminal.
+"colorscheme industry
+"colorscheme slate
+set spell
 "set relativenumber
-filetype plugin on
+" filetype plugin on
 
-   call plug#begin('~/.vim/plugged')
-Plug 'preservim/nerdtree'
+ "   call plug#begin('~/.vim/plugged')
+" Plug 'preservim/nerdtree'
 " List your plugins here
   " Plug 'tpope/vim-sensible'
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 
-   call plug#end()
-packadd termdebug
+ "   call plug#end()
+" packadd termdebug
 " An example for a vimrc file.
 "
 " Maintainer:  The Vim Project <https://github.com/vim/vim>
@@ -33,7 +37,7 @@ endif
 source $VIMRUNTIME/defaults.vim
 
 if has("vms")
-  set nobackup    " do not keep a backup file, use versions instead
+  set nobackup    " do nt keep a backup file, use versions instead
 else
   set backup    " keep a backup file (restore to previous version)
   if has('persistent_undo')

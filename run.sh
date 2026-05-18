@@ -20,4 +20,5 @@ if [[ "${answer,,}" == "y" ]] ; then
     wget 'https://telegram.org/dl/desktop/linux' -O telega.tar.gz
     tar -xavf telega.tar.gz
 fi    
+echo 'uncomment HISTORY in zshrc if you need'
 echo 'but config for web you must configure manually'
