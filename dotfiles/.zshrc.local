@@ -1,14 +1,12 @@
 HISTFILE=~/d/.zsh_history
 alias HELP_ME='less ~/.zshrc.local'
 alias cls=clear
-alias pac-upd='sudo pacman -Syu'
-alias pac-ins='sudo pacman -S'
+alias p-upd='sudo pacman -Syu'
+alias p-ins='sudo pacman -S'
 alias v=vim
 alias game=lutris
 alias g=geany
 alias E="$EXPLORER . &>/dev/null &"
-alias HDD-on='sudo mount /dev/sda2 /mnt'
-alias hdd-off='sudo umount -r /mnt'
 # guide
 # prog >/dev/null 2>/dev/null &
 # the same is prog >/dev/null 2>&1 &
